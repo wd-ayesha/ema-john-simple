@@ -12,9 +12,10 @@ const Shop = () => {
     },[])
 
     return (
+        <>
+        <h2>Products comming here: {products.length}</h2>
         <div className='shop-container'>
             <div className='products-container'>
-                <h2>Products comming here: {products.length}</h2>
                 {
                     products.map(product=><Product
                     key={product.id}
@@ -26,6 +27,7 @@ const Shop = () => {
                 <h4>Order Summery</h4>
             </div>
         </div>
+        </>
     );
 };
 
